@@ -65,7 +65,8 @@
         "p-retry": "4",
         "sdp-transform": "^2.14.1",
         "unhomoglyph": "^1.0.6",
-        "uuid": "9"
+        "uuid": "9",
+        "web-encoding": "^1.1.5"
     },
     "devDependencies": {
         "@babel/cli": "^7.12.10",

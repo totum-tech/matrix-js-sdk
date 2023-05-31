@@ -15,10 +15,11 @@ limitations under the License.
 */
 
 import { logger } from "../logger";
+import { TextEncoder as Encoder } from "web-encoding";
 
 export let crypto = global.window?.crypto;
+export let TextEncoder = Encoder;
 export let subtleCrypto = global.window?.crypto?.subtle ?? global.window?.crypto?.webkitSubtle;
-export let TextEncoder = global.window?.TextEncoder;
 
 /* eslint-disable @typescript-eslint/no-var-requires */
 if (!crypto) {
